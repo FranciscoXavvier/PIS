@@ -23,17 +23,16 @@
     </div>
   </header>
   <header id="navbar">
-    
     <nav>
-      <ul>
-        <li><a href="inicio.html">INICIO </a></li>
-        <li> <a href="#">INDICADORES</a> 
+      <ul class="menu">
+        <li><a href="inicio.html">INICIO</a></li>
+        <li><a href="#">INDICADORES</a>
           <ul>
             <li><a href="#">Entidad</a></li>
             <li><a href="#">Comparación</a></li>
             <li><a href="#">Tendencias</a></li>
           </ul>
-        </li> 
+        </li>
         <li><a href="visualizaciones.html">VISUALIZACIONES</a></li>
         <li><a href="documentacion.html">MAS INFORMACIÓN</a>
           <ul>
@@ -41,17 +40,18 @@
             <li><a href="documentacion.html">Ficha técnica</a></li>
           </ul>
         </li>
-        <div class="social-icons-container">
-          <div class="social-icons">
-            <li> <a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
-            <li> <a href="#"> <i class="fa-brands fa-square-x-twitter"></i></a></li>
-            <li> <a href="#"> <i class="fa-brands fa-square-instagram"></i></a></li>
-            <li> <a href="#">  <i class="fa-solid fa-envelope"></i></a></li>
-          </div>
-        </div>
       </ul>
-
+    
+      <div class="social-icons-container">
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
     </nav>
+    
     
     </header>
     <div class="language-buttons">
@@ -64,23 +64,37 @@
       <div class="col">
         La Plataforma de Información de Salud (PIS) es una plataforma informativa relacionada con la salud
         en el país de México, mostrando aspectos como defunciones, egresos hospitalarios, entre otros.
-        Dando como resultado una mayor visibilidad sobre esta información de manera gráfica ya actualizada.
+        Dando como resultado una mayor visibilidad sobre esta información de manera gráfica actualizada.
       </div>
     </div>
   </div> <br><br><br>
 
   <div class="container text-center">
+    <h2>Datos generales en México</h2>
     <div class="row">
       <div id="container">
-        <iframe title="Conjunto defunciones 2020 - prueba" width="800" height="836" src="https://app.powerbi.com/view?r=eyJrIjoiNDUyNjBkZTktMmM1MC00Y2YwLTk3MGUtNzgxN2Y4NWJlOWQ5IiwidCI6IjNjOTA3NjUxLWQ4YzYtNGNhNi1hOGE0LTZhMjQyNDMwZTY1MyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
-        <div id="container">
-          <button onclick="descargarInforme()">Descargar informe</button>
-          <script src="../JavaScript/FileSaver.js"></script>
-          <script src="../JavaScript/powerbi.js"></script>
-          <script src="../JavaScript/script.js"></script>
-        </div>
+        <iframe title="Prueba"width="100%" height="600px" src="https://app.powerbi.com/view?r=eyJrIjoiZGIyNTA2NTEtMjgyNS00OTc1LWJjMzMtNmYxZWZmYjY0YjY1IiwidCI6IjNjOTA3NjUxLWQ4YzYtNGNhNi1hOGE0LTZhMjQyNDMwZTY1MyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
       </div>
     </div>
+  </div>
+
+  <div class="textPage">
+    <h2 class="text-center">Información Relevante</h2>
+      <div style="display: flex; align-items: center;">
+        <a href="https://www.gob.mx/salud" target="_blank" style="margin-right: 20px;">
+          <img src="img/salud-verde-03.jpg" alt="" width="300px" height="300px"
+          alt="Logo Secretaría de Salud" 
+          style="width: 300px; border: 3px solid rgb(255, 255, 255); border-radius: 10px;">
+        </a>
+      
+    <p style="flex: 1; font-size: 16px; line-height: 1.6;">La plataforma de información de salud en México busca proporcionar datos actualizados sobre 
+      defunciones, egresos hospitalarios y otros indicadores clave de salud pública. Esta información 
+      es vital para la toma de decisiones informadas, estos datos son obtenidos de la Secretaria de salud
+      y sus datos abiertos.
+      <br><br>
+      <strong>Explora más datos en los gráficos interactivos de arriba.</strong>
+    </p>
+      </div>
   </div>
 
 </body>
